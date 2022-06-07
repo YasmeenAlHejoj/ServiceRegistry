@@ -1,0 +1,12 @@
+server:
+  port: 2020
+spring:
+  application:
+    name: Server-B
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8762/eureka
+
+
+
