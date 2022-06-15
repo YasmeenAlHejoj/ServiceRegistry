@@ -1,4 +1,4 @@
-package com.assignment1.ServiceA.adapter.model;
+package com.assignment1.ServiceA.model;
 
 import lombok.*;
 

@@ -1,4 +1,4 @@
-package com.assignment1.ServiceA.adapter.dto;
+package com.assignment1.ServiceA.adapter.rest.dto;
 
 import lombok.Builder;
 import lombok.Data;

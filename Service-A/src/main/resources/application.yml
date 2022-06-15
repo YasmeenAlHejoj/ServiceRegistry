@@ -5,8 +5,10 @@ spring:
     name: server-A
 eureka:
   client:
-   serviceUrl:
-     defaultZone: http://localhost:8762/eureka
+    serviceUrl:
+      defaultZone: http://localhost:8762/eureka
 
 
-
+restTemplate:
+  serviceB:
+    url: "http://Server-B/api-b"

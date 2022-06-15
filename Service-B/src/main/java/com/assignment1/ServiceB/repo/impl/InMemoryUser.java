@@ -6,8 +6,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
-import java.util.stream.Collectors;
 
 @Service
 public class InMemoryUser implements UserManagement {
@@ -20,11 +18,12 @@ public class InMemoryUser implements UserManagement {
         users.add(new User("1", "moh", 40));
         users.add(new User("2", "yas", 30));
         users.add(new User("3", "qq", 20));
-        users.add(new User("4", "qwqwqwqwqw", 10));
+        users.add(new User("4", "AA", 10));
     }
 
     @Override
-    public String getNameById(String id) {
+    public String getNameById(String id)
+    {
         return users.stream()
             .filter(u -> u.getId().equals(id))
             .map(User::getName)

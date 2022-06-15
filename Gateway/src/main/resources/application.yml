@@ -1,0 +1,26 @@
+server:
+  port: 80
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8762/eureka
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: service_route
+          uri: lb://Server-B #http://localhost:2020
+          predicates:
+            - Path=/service/**
+          filters:
+            - RewritePath=/service(?<segment>/?.*), $\{segment}
+        - id: service_route2
+          uri: lb://server-A
+          predicates:
+            - Path=/caller/**
+          filters:
+            - RewritePath=/caller(?<segment>/?.*), $\{segment}
+  application:
+    name: gateway
+

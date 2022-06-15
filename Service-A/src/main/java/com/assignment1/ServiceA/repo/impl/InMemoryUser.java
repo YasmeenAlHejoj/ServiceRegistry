@@ -1,7 +1,7 @@
-package com.assignment1.ServiceA.adapter.repo.impl;
+package com.assignment1.ServiceA.repo.impl;
 
-import com.assignment1.ServiceA.adapter.model.User;
-import com.assignment1.ServiceA.adapter.repo.UserManagement;
+import com.assignment1.ServiceA.model.User;
+import com.assignment1.ServiceA.repo.UserManagement;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

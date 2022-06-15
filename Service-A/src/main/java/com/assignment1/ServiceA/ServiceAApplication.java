@@ -31,7 +31,6 @@ public class ServiceAApplication {
     @Bean
     public CommandLineRunner test(DiscoveryClient discoveryClient) {
         return args -> {
-            System.out.println("_______________________________________________");
             List<ServiceInstance> instances = discoveryClient.getInstances("server-A");
             instances
                 .stream()

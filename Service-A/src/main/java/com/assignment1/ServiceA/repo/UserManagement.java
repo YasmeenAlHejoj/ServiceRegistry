@@ -1,6 +1,6 @@
-package com.assignment1.ServiceA.adapter.repo;
+package com.assignment1.ServiceA.repo;
 
-import com.assignment1.ServiceA.adapter.model.User;
+import com.assignment1.ServiceA.model.User;
 
 import java.util.List;
 import java.util.Optional;
